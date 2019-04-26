@@ -5,12 +5,12 @@ router.get("/:page", (req, res) => {
     // Get the page name
     let page = req.params.page;
 
-    if (page === "investors") {
-        res.render("about-investors", {
+    if (page === "minerals-mining") {
+        res.render("services-mining", {
             page: page
         });
-    } else if (page === "technical-partners") {
-        res.render("about-partners", {
+    } else if (page === "investors") {
+        res.render("about-investors", {
             page: page
         });
     } else if (page === "management-team") {
@@ -28,9 +28,7 @@ router.get("/:page", (req, res) => {
 });
 
 router.get("/", (req, res) => {
-    res.render("about", {
-        page: "About Page"
-    });
+    res.redirect("/minerals-mining")
 });
 
 module.exports = router;

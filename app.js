@@ -9,6 +9,9 @@ const passportConfig = require("./config/passport");
 const router = express.Router();
 const indexRoute = require("./routes/indexRoute");
 const aboutRoute = require("./routes/aboutRoute");
+const servicesRoute = require("./routes/servicesRoute");
+const helpers = require('./helpers');
+
 
 
 
@@ -35,6 +38,13 @@ app.set("view engine", "ejs");
 // Set the Public DIR
 app.use(express.static(path.join(__dirname, "/public")));
 
+// pass variables to our templates + all requests
+app.use((req, res, next) => {
+    res.locals.h = helpers;
+    next();
+});
+
+
 
 // TODO: Express session config
 // TODO: Express Message Middleware
@@ -42,6 +52,8 @@ app.use(express.static(path.join(__dirname, "/public")));
 // HANDLE ROUTING
 app.use('/', indexRoute);
 app.use('/about', aboutRoute);
+app.use('/services', servicesRoute);
+
 
 // A non-specific ROUTE
 app.get("*", (req, res) => {
