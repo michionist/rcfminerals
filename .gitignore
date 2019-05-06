@@ -3,3 +3,5 @@ Template/
 public/image
 Archive.zip
 config
+document/
+variables.env

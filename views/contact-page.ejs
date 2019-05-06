@@ -1,0 +1,106 @@
+<% include partials/header %>
+
+<body>
+    <!-- Header -->
+    <header class="site-header header-s2">
+        <!-- Navbar -->
+        <% include partials/navbar %>
+        <!-- #end Navbar -->
+        <!-- Banner -->
+        <div class="banner banner-static">
+            <div class="container">
+                <div class="content row">
+
+                    <div class="imagebg">
+                        <img src="/image/about-banner.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+    </header>
+    <!-- End Header -->
+
+    <div class="section section-contents section-freequote section-pad">
+        <div class="container">
+            <div class="row">
+
+                <div class="freequote-content row">
+
+                    <div class="quote-list col-md-8 res-m-bttm">
+                        <div class="quote-group">
+                            <h1>Our Contact and Consultant form</h1>
+                            <p>For general Inquiry, Feedback and consultant use of Contact form</p>
+                            <form id="quote-request" class="form-quote" action="#" method="post"
+                                novalidate="novalidate">
+                                <div class="form-group row">
+                                    <div class="form-field col-md-6 form-m-bttm">
+                                        <input name="quote-request-name" type="text" placeholder="Name *"
+                                            class="form-control required" aria-required="true">
+                                    </div>
+                                    <div class="form-field col-md-6">
+                                        <input name="quote-request-company" type="text" placeholder="Company"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="form-field col-md-6 form-m-bttm">
+                                        <input name="quote-request-email" type="email" placeholder="Email *"
+                                            class="form-control required email" aria-required="true">
+                                    </div>
+                                    <div class="form-field col-md-6">
+                                        <input name="quote-request-phone" type="text" placeholder="Phone *"
+                                            class="form-control required" aria-required="true">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="form-field col-md-12">
+                                        <textarea name="quote-request-message" placeholder="Messages *"
+                                            class="txtarea form-control required" aria-required="true"></textarea>
+                                    </div>
+                                </div>
+                                <input type="text" class="hidden" name="form-anti-honeypot" value="">
+                                <div class="g-recaptcha" data-sitekey="6LdNwz0UAAAAAED8ZFtVoXnFKRniFMBh14NReqaZ"></div>
+                                <div class="gaps"></div>
+                                <button type="submit" class="btn">Submit</button>
+                                <div class="form-results"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="contact-details col-md-4">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-list">
+                            <li><em class="fa fa-map" aria-hidden="true"></em>
+                                <span>14, Magbaja street, off Refinery Road,<br>
+                                    off Akah Avenue, Effurun,
+                                    Uvwie Local Government Area,<br>
+                                    Delta State, Nigeria </span>
+                            </li>
+                            <li><em class="fa fa-phone" aria-hidden="true"></em>
+                                <span>
+                                    <strong>Phone:</strong> +(234) 814 076 4160
+                                    <br />
+                                    <strong>UK Phone</strong>: +(44) 203 355 9563
+                                </span>
+                            </li>
+                            <li><em class="fa fa-envelope" aria-hidden="true"></em>
+                                <span>Email : <a
+                                        href="mailto:info@rcfmineralsltd.com">info@rcfmineralsltd.com</a></span>
+                            </li>
+                            <li>
+                                <em class="fa fa-clock-o" aria-hidden="true"></em><span>Mon - Sat: 8AM - 7PM </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<% include partials/footer %>
