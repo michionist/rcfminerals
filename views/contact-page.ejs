@@ -32,39 +32,49 @@
                         <div class="quote-group">
                             <h1>Our Contact and Consultant form</h1>
                             <p>For general Inquiry, Feedback and consultant use of Contact form</p>
-                            <form id="quote-request" class="form-quote" action="#" method="post"
-                                novalidate="novalidate">
+                            <form id="contact_us" class="form-quote" action="/send" method="post">
+                                <div id="form_results" class="alert alert-success hide">
+                                    <span id="message"></span>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
                                 <div class="form-group row">
                                     <div class="form-field col-md-6 form-m-bttm">
-                                        <input name="quote-request-name" type="text" placeholder="Name *"
+                                        <input name="contact_name" type="text" placeholder="Name *"
                                             class="form-control required" aria-required="true">
                                     </div>
                                     <div class="form-field col-md-6">
-                                        <input name="quote-request-company" type="text" placeholder="Company"
+                                        <input name="contact_company" type="text" placeholder="Company"
                                             class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="form-field col-md-6 form-m-bttm">
-                                        <input name="quote-request-email" type="email" placeholder="Email *"
+                                        <input name="contact_email" type="email" placeholder="Email *"
                                             class="form-control required email" aria-required="true">
                                     </div>
                                     <div class="form-field col-md-6">
-                                        <input name="quote-request-phone" type="text" placeholder="Phone *"
+                                        <input name="contact_phone" type="text" placeholder="Phone *"
                                             class="form-control required" aria-required="true">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <div class="form-field col-md-12">
-                                        <textarea name="quote-request-message" placeholder="Messages *"
+                                        <textarea name="contact_message" placeholder="Messages *"
                                             class="txtarea form-control required" aria-required="true"></textarea>
                                     </div>
                                 </div>
                                 <input type="text" class="hidden" name="form-anti-honeypot" value="">
-                                <div class="g-recaptcha" data-sitekey="6LdNwz0UAAAAAED8ZFtVoXnFKRniFMBh14NReqaZ"></div>
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6LcJ66EUAAAAAIoHHGeWL-yBBcHqtPPE9BnKjq6s"></div>
+                                    </div>
+                                </div>
                                 <div class="gaps"></div>
-                                <button type="submit" class="btn">Submit</button>
+                                <button id="mail_send_btn" type="submit" class="btn">Submit</button>
                                 <div class="form-results"></div>
                             </form>
                         </div>

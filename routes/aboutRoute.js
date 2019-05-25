@@ -21,6 +21,22 @@ router.get("/:page", (req, res) => {
         res.render("about-testimonal", {
             page: page
         });
+    } else if (page === "strategy") {
+        res.render("about-strategy", {
+            page: page
+        });
+    } else if (page === "value") {
+        res.render("about-value", {
+            page: page
+        });
+    } else if (page === "goverance") {
+        res.render("about-goverance", {
+            page: page
+        });
+    } else if (page === "mission-vision") {
+        res.render("about-mission", {
+            page: page
+        });
     } else {
         res.render("404");
     }
