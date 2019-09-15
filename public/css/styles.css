@@ -9070,3 +9070,25 @@ h3.heading-lead+.lead {
     margin-top: 25px;
     margin-bottom: 25px
 }
+
+
+.facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.facebook:hover {
+    background-color: transparent;
+    border-color: #3b5998;
+}
+
+
+.linkedin {
+    background-color: #4875B4;
+    border-color: #4875B4;
+}
+
+.linkedin:hover {
+    background-color: transparent;
+    border-color: rgb(40, 94, 170);
+}
